@@ -1,6 +1,6 @@
-***********************************************************************
+********************************************************************************
 SSDSim: DiskSim 4.0, with Microsoft SSD-add-on patch applied. 
- * Need to install bison and flex packages (e.g., sudo apt install bison flex, for Ubunntu/Debian). 
+ * Need to install the bison and flex packages (e.g., sudo apt install bison flex, for Ubunntu/Debian). 
  * Tested with a 32-bit Ubuntu 14.10 OS, kernel version 3.16.0 with gcc 4.9.1.
  * Tested with a 32-bit Debian 10.2.0 OS, kernel version 4.19.0 with gcc 8.3.0. 
  * Don't run "make" with multiple threads (no "-j 2" for example).
@@ -15,7 +15,7 @@ Additional changes:
 References:
  [1]. http://scobyseo.blogspot.com/2009/12/how-to-compile-disksim-40-ssdsimms-in.html
  [2]. https://gcc.gnu.org/gcc-5/porting_to.html
-***********************************************************************
+********************************************************************************
 
 This directory contains release 4.0 of the DiskSim storage subsystem
 simulator.  Check out the doc directory for he corresponding reference 
