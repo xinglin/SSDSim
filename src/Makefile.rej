@@ -1,0 +1,10 @@
+--- src/Makefile	2008-05-11 14:30:53.000000000 -0700
++++ src/Makefile	2008-08-19 16:36:15.417607700 -0700
+@@ -33,6 +33,7 @@
+ include .paths
+ 
+ LDFLAGS = -lm -L. -ldisksim $(DISKMODEL_LDFLAGS) $(MEMSMODEL_LDFLAGS) \
++                            $(SSDMODEL_LDFLAGS) \
+                             $(LIBPARAM_LDFLAGS) $(LIBDDBG_LDFLAGS) 
+ 
+ HP_FAST_OFLAGS = +O4
