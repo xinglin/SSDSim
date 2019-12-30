@@ -1,12 +1,20 @@
 ***********************************************************************
 SSDSim: DiskSim 4.0, with Microsoft SSD-add-on patch applied. 
- * Tested with a 32-bit Ubuntu 14.10 OS. 
- * Changed the math library (-lm) in several Makefiles (memsmodel/Makefile and src/Makefile).
- * Added SSDMODEL_LDFLAGS and SSDMODEL_CFLAGS in src/Makefile.
+ * Need to install bison and flex packages (e.g., sudo apt install bison flex, for Ubunntu/Debian). 
+ * Tested with a 32-bit Ubuntu 14.10 OS, kernel version 3.16.0 with gcc 4.9.1.
+ * Tested with a 32-bit Debian 10.2.0 OS, kernel version 4.19.0 with gcc 8.3.0. 
  * Don't run "make" with multiple threads (no "-j 2" for example).
 
+Additional changes: 
+ * Changed the math library (-lm) in several Makefiles (memsmodel/Makefile and src/Makefile).
+ * Added SSDMODEL_LDFLAGS and SSDMODEL_CFLAGS in src/Makefile.
+ * Added "-std=gnu89" into CFLAGS in src/Makefile, to always use GNU89 standards. 
+   GNU11 and GNU89 standards handle inline function definitions differently [2]. 
+   And you may see errors such as "inline function 'foo' declared but never defined".  
+
 References:
- * http://scobyseo.blogspot.com/2009/12/how-to-compile-disksim-40-ssdsimms-in.html
+ [1]. http://scobyseo.blogspot.com/2009/12/how-to-compile-disksim-40-ssdsimms-in.html
+ [2]. https://gcc.gnu.org/gcc-5/porting_to.html
 ***********************************************************************
 
 This directory contains release 4.0 of the DiskSim storage subsystem
