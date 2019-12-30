@@ -4,6 +4,9 @@ SSDSim: DiskSim 4.0, with Microsoft SSD-add-on patch applied.
  * Changed the math library (-lm) in several Makefiles (memsmodel/Makefile and src/Makefile).
  * Added SSDMODEL_LDFLAGS and SSDMODEL_CFLAGS in src/Makefile.
  * Don't run "make" with multiple threads (no "-j 2" for example).
+
+References:
+ * http://scobyseo.blogspot.com/2009/12/how-to-compile-disksim-40-ssdsimms-in.html
 ***********************************************************************
 
 This directory contains release 4.0 of the DiskSim storage subsystem
